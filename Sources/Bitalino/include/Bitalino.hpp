@@ -115,14 +115,11 @@
 
 #ifndef Bitalino_hpp
 #define Bitalino_hpp
-
-#include <stdio.h>
-
-#endif /* Bitalino_hpp */
-
 #ifndef _BITALINOHEADER_
 #define _BITALINOHEADER_
+#ifdef __cplusplus
 
+#include <stdio.h>
 #include <string>
 #include <vector>
 
@@ -323,4 +320,6 @@ private:
 #endif
 };
 
+#endif // __cplusplus
 #endif // _BITALINOHEADER_
+#endif /* Bitalino_hpp */
