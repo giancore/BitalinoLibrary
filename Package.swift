@@ -5,17 +5,29 @@ import PackageDescription
 
 let package = Package(
     name: "BitalinoLibrary",
+    platforms: [.iOS(.v12)],
     products: [
-        // Products define the executables and libraries a package produces, making them visible to other packages.
-        .library(name: "Bitalino", targets: ["Bitalino"]),
-        .executable(name: "BitalinoLibrary", targets: ["BitalinoLibrary"])
+        .library(
+            name: "BitalinoCpp",
+            targets: ["BitalinoCpp"]),
+        .library(
+            name: "BitalinoLibrary",
+            targets: ["BitalinoLibrary"]),
     ],
     targets: [
-        .target(name: "Bitalino"),
+        .target(
+            name: "BitalinoCpp",
+            dependencies: []
+        ),
         .executableTarget(
             name: "BitalinoLibrary",
-            dependencies: ["Bitalino"],
-            swiftSettings: [.unsafeFlags(["-cxx-interoperability-mode=default"])]
-        )
+            dependencies: ["BitalinoCpp"],
+            path: "./Sources/BitalinoLibrary",
+            sources: [ "BitalinoLibrary.swift" ],
+            swiftSettings: [.unsafeFlags([
+                "-I", "Sources/BitalinoCpp",
+                "-cxx-interoperability-mode=default",
+            ])]
+        ),
     ]
 )

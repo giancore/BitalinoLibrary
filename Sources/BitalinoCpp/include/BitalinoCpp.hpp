@@ -1,3 +1,13 @@
+//
+//  BitalinoCpp.hpp
+//  
+//
+//  Created by Gian Luca Silva Mella on 16/05/24.
+//
+
+#ifndef BitalinoCpp_hpp
+#define BitalinoCpp_hpp
+
 /**
  * \file
  * \copyright  Copyright 2014-2015 PLUX - Wireless Biosignals, S.A.
@@ -20,7 +30,7 @@
  You should have received a copy of the GNU Lesser General Public License
  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  
- **/
+ */
 
 
  /**
@@ -113,13 +123,9 @@
   - enter command `./test` in the command line to run the application.
   */
 
-#ifndef Bitalino_hpp
-#define Bitalino_hpp
 #ifndef _BITALINOHEADER_
 #define _BITALINOHEADER_
-#ifdef __cplusplus
 
-#include <stdio.h>
 #include <string>
 #include <vector>
 
@@ -320,6 +326,7 @@ private:
 #endif
 };
 
-#endif // __cplusplus
 #endif // _BITALINOHEADER_
-#endif /* Bitalino_hpp */
+
+
+#endif /* BitalinoCpp_hpp */

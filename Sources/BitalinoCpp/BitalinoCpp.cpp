@@ -58,7 +58,7 @@ void Sleep(int millisecs)
 #endif // Linux or Mac OS
 
 
-#include "Bitalino.hpp"
+#include "BitalinoCpp.hpp"
 
 /*****************************************************************************/
 
