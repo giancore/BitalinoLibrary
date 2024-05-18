@@ -7,6 +7,7 @@
 
 #ifndef BitalinoCpp_hpp
 #define BitalinoCpp_hpp
+#ifdef __cplusplus
 
 /**
  * \file
@@ -327,6 +328,5 @@ private:
 };
 
 #endif // _BITALINOHEADER_
-
-
+#endif
 #endif /* BitalinoCpp_hpp */
