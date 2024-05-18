@@ -22,7 +22,7 @@ let package = Package(
             name: "BitalinoLibrary",
             dependencies: ["BitalinoCpp"],
             path: "./Sources/BitalinoLibrary",
-            sources: [ "BitalinoLibrary.swift" ],
+            sources: [ "main.swift" ],
             swiftSettings: [.unsafeFlags([
                 "-I", "Sources/BitalinoCpp",
                 "-cxx-interoperability-mode=default",
