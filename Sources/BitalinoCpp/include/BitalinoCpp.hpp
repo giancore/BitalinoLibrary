@@ -7,7 +7,6 @@
 
 #ifndef BitalinoCpp_hpp
 #define BitalinoCpp_hpp
-#ifdef __cplusplus
 
 /**
  * \file
@@ -127,8 +126,10 @@
 #ifndef _BITALINOHEADER_
 #define _BITALINOHEADER_
 
+#ifdef __cplusplus
 #include <string>
 #include <vector>
+#endif
 
 #ifdef _WIN32 // 32-bit or 64-bit Windows
 
@@ -328,5 +329,4 @@ private:
 };
 
 #endif // _BITALINOHEADER_
-#endif
 #endif /* BitalinoCpp_hpp */
