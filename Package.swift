@@ -5,12 +5,11 @@ import PackageDescription
 
 let package = Package(
     name: "BitalinoLibrary",
-    platforms: [.iOS(.v12)],
     products: [
         .library(
             name: "BitalinoCpp",
             targets: ["BitalinoCpp"]),
-        .library(
+        .executable(
             name: "BitalinoLibrary",
             targets: ["BitalinoLibrary"]),
     ],
@@ -23,7 +22,7 @@ let package = Package(
             name: "BitalinoLibrary",
             dependencies: ["BitalinoCpp"],
             path: "./Sources/BitalinoLibrary",
-            sources: [ "main.swift" ],
+            sources: [ "BitalinoLibrary.swift" ],
             swiftSettings: [.unsafeFlags([
                 "-I", "Sources/BitalinoCpp",
                 "-cxx-interoperability-mode=default",
